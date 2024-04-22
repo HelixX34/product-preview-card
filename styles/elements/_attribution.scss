@@ -1,0 +1,13 @@
+.attribution {
+  color: $veryDarkBlue;
+  font-size: 0.8rem;
+
+  a {
+    color: $darkCyan;
+
+    &:hover {
+      font-weight: 700;
+      transition: 0.15s ease;
+    }
+  }
+}

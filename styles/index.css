@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "montserrat";
+  src: url(../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "fraunces";
+  src: url(../../assets/fonts/Fraunces/Fraunces-VariableFont_SOFTWONKopszwght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+* body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(242, 234, 226);
+  color: rgb(108, 114, 137);
+  font-family: "montserrat";
+}
+
+.card {
+  width: 343px;
+  height: 667px;
+  background: rgb(250, 250, 250);
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 600px;
+    height: 450px;
+  }
+}
+.card__picture {
+  width: 100%;
+  height: 16em;
+  background: url(../../assets/images/image-product-mobile.jpg) center/cover;
+}
+@media screen and (min-width: 1024px) {
+  .card__picture {
+    height: 100%;
+    background: url(../../assets/images/image-product-desktop.jpg) center/cover;
+  }
+}
+.card__elements {
+  padding: 0 24px;
+}
+@media screen and (min-width: 1024px) {
+  .card__elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 32px;
+  }
+}
+.card__elements__description {
+  padding: 1.5em 0;
+}
+.card__elements__description__tips {
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+@media screen and (min-width: 1024px) {
+  .card__elements__description__tips {
+    font-size: 0.8rem;
+  }
+}
+.card__elements__description__title {
+  padding: 12px 0;
+  color: rgb(28, 35, 43);
+  font-family: "fraunces";
+  font-weight: 700;
+}
+@media screen and (min-width: 1024px) {
+  .card__elements__description__title {
+    padding: 24px 0;
+    line-height: 180%;
+  }
+}
+.card__elements__description__text {
+  font-size: 0.88rem;
+  line-height: 180%;
+}
+.card__elements__prices {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card__elements__prices #promo {
+  color: rgb(61, 129, 104);
+  font-family: "fraunces", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.card__elements__prices #price {
+  text-decoration: line-through;
+}
+.card__elements__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+.card__elements__btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 295px;
+  height: 48px;
+  background: rgb(61, 129, 104);
+  color: rgb(250, 250, 250);
+  border: none;
+  border-radius: 8px;
+  font-family: "montserrat";
+  font-weight: 700;
+  cursor: pointer;
+}
+.card__elements__btn button:hover {
+  background: rgb(26, 64, 50);
+  transition: 0.2s ease;
+}
+
+.attribution {
+  color: rgb(28, 35, 43);
+  font-size: 0.8rem;
+}
+.attribution a {
+  color: rgb(61, 129, 104);
+}
+.attribution a:hover {
+  font-weight: 700;
+  transition: 0.15s ease;
+}/*# sourceMappingURL=index.css.map */

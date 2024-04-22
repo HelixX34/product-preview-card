@@ -1,0 +1,36 @@
+// * ----
+// * FONT
+// * ----
+
+@font-face {
+  font-family: "montserrat";
+  src: url(../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "fraunces";
+  src: url(../../assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\WONK\opsz\wght.ttf);
+}
+
+$primaryFont: "montserrat";
+$secondaryFont: "fraunces";
+
+// ---------------------------------------------------
+
+// * ------
+// * COLORS
+// * ------
+
+// ? PRIMARY
+
+$darkCyan: rgb(61, 129, 104);
+$cream: rgb(242, 234, 226);
+
+// ? NEUTRAL
+
+$veryDarkBlue: rgb(28, 35, 43);
+$darkGrayishBlue: rgb(108, 114, 137);
+$white: rgb(250, 250, 250);
+
+// ? ACTIVE
+
+$veryDarkCyan: rgb(26, 64, 50);

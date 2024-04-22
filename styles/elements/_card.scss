@@ -1,0 +1,133 @@
+.card {
+  width: 343px;
+  height: 667px;
+  background: $white;
+  border-radius: 10px;
+  overflow: hidden;
+
+  // -----------------------------------
+
+  // ? MEDIAQUERIES
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 600px;
+    height: 450px;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 16em;
+    background: url(../../assets/images/image-product-mobile.jpg) center/cover;
+
+    // -----------------------------------
+
+    // ? MEDIAQUERIES
+
+    @media screen and (min-width: 1024px) {
+      height: 100%;
+      background: url(../../assets/images/image-product-desktop.jpg)
+        center/cover;
+    }
+  }
+
+  &__elements {
+    padding: 0 24px;
+
+    // -----------------------------------
+
+    // ? MEDIAQUERIES
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0 32px;
+    }
+
+    &__description {
+      padding: 1.5em 0;
+
+      &__tips {
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+
+        // -----------------------------------
+
+        // ? MEDIAQUERIES
+
+        @media screen and (min-width: 1024px) {
+          font-size: 0.8rem;
+        }
+      }
+
+      &__title {
+        padding: 12px 0;
+        color: $veryDarkBlue;
+        font-family: $secondaryFont;
+        font-weight: 700;
+
+        // -----------------------------------
+
+        // ? MEDIAQUERIES
+
+        @media screen and (min-width: 1024px) {
+          padding: 24px 0;
+          line-height: 180%;
+        }
+      }
+
+      &__text {
+        font-size: 0.88rem;
+        line-height: 180%;
+      }
+    }
+
+    &__prices {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      #promo {
+        color: $darkCyan;
+        font-family: $secondaryFont, serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+
+      #price {
+        text-decoration: line-through;
+      }
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 295px;
+        height: 48px;
+        background: $darkCyan;
+        color: $white;
+        border: none;
+        border-radius: 8px;
+        font-family: $primaryFont;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover {
+          background: $veryDarkCyan;
+          transition: 0.2s ease;
+        }
+      }
+    }
+  }
+}
